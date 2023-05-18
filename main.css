@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Edu+TAS+Beginner:wght@600&family=Ubuntu:wght@700&display=swap');
+  
+ 
+*{
+    margin:0;
+    padding:0;
+}
+
+
+body {
+    
+    
+}
+
+
+.container{
+    margin:auto;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background:conic-gradient(from -135deg at -10% center, #ffa500, #ff7715, #ff522a, #ff3f47, #ff5482, #ff69b4);
+    
+}
+
+
+.container .clock_box{
+    width:80%;
+    text-align:center;
+    background:rgba(18, 20, 19,0.1);
+    position:relative ;
+        
+}
+
+
+.container .clock_box p{
+     margin:5px;
+     height:100px;
+     margin:auto;
+     font-size:4rem;
+     font-weight:900;
+     color:#fff;
+    font-family: 'DynaPuff', cursive;
+    transition:background-color 2s ease;
+    
+}
+
+
+
+#day{
+    padding-top:10px;
+}
+
+
+
+#hour{
+    visibility:hidden;
+    transition: background 5s ease-out;
+}
+
+
+#new_hour{
+position:absolute;
+top:23.90%;
+left:50%;
+transform:translateX(-50%);
+width:100%;
+transition: background 2s linear;
+}
+
+
+
+#minutes{
+    padding-top:50px;
+}
+
+
+
+#span{
+    font-size:6rem;
+    position:fixed;
+    top:40%;
+    left:48%;
+    color:#fff;
+    animation:blink .5s infinite;
+}
+
+
+@keyframes blink{
+    
+    from{opacity:1;}
+    to{opacity:0;}
+}
